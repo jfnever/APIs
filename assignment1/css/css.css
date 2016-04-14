@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #dbdbdb;
+}
+
+.wrapper{
+    margin:100px auto 100px 100px;
+    padding: 15px;
+    width: 400px;
+    height: 600px;
+    background-color: #6a6a6a;
+    color: white;
+}
+
+#error{
+    color: red;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="css/css.css" type="text/css" rel="stylesheet"/>
+    <title>Number Form</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <form>
+            <label for="numbers" class="sr-only">Enter a number:</label>
+            <input type="text" name="number" id="numbers" placeholder="15" autofocus/>
+
+            <p id="error"></p>
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="reset" id="reset-btn">Reset</button>
+
+        </form>
+        <h3>You just entered:</h3>
+        <p id="list"></p>
+        <p id="count"></p>
+        <p id="sum"></p>
+        <p id="average"></p>
+
+    </div>
+
+
+    <script src="javascript/js.js"></script>
+</body>
+</html>
