@@ -51,9 +51,9 @@ function onClickSubmit(evt){
 
 function onClickReset(evt){
 
-    numberList = "Numbers:";
+    numberList = "Numbers:"+"";
     count = 0;
-    numberListAfter.innerHTML = "";
+    numberListAfter.innerHTML = numberList;
     countAfter.innerHTML ="";
     sumAfter.innerHTML = "";
     averageAfter.innerHTML = "";
