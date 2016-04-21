@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css" type="text/css"/>
+    <title>Assignment2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="section1">
+            <p>Tell me some of your Best-seller flowers!</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody id="flowerlist">
+
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+            <input type="button" value="build my flower list" id="addflower" onclick="start(); return false;"/>
+
+        <div id="section2">
+            <form id = “dataform>
+                <label>Flower's name:</label>
+                <input type="text" name="name" id="name" autofocus/>
+                <br />
+                <label>Color:</label>
+                <input type="text" name="color" id="color"/>
+                <br/>
+                <label>Price in USD:</label>
+                <input type="number" name="price" id="price"/>
+                <br/>
+                <input type="submit" value = "Submit" id="submitflower" onclick="addFlowerValue();refresh();return false;"/>
+                <input type="reset" value = "Cancel" id="cancelsubmit"/>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="js/js1.js"></script>
+    <footer>
+
+    </footer>
+
+
+
+
+
+</body>
+</html>
