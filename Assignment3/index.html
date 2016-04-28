@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+
+    <title>Assignment 3</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h3>Enter numbers or words:</h3>
+            <textarea id="textarea" name="input" col="30" rows="2" autofocus/>
+
+            </textarea><br/>
+
+            <input type="submit" value="submit" class="btn btn-lg btn-primary btn-block" id="submit-btn" onclick="addData();clearText();return false;"/>
+            <input type="reset" value="reset" class="btn btn-lg btn-primary btn-block" id="reset-btn" onclick="resetInput();return false;"/>
+
+        </form>
+
+        <h3>Numbers:</h3>
+            <table>
+
+                <tr>
+                    <th>Count:</th>
+                    <th>Sum:</th>
+                    <th>Average:</th>
+                </tr>
+
+                <tbody id="numbercell">
+
+
+                </tbody>
+            </table>
+
+        <h3>Words:</h3>
+          <table>
+              <tr>
+                  <td id="words">
+
+                  </td>
+              </tr>
+
+          </table>
+
+
+
+
+    </div>
+    <script src="js/js3.js"></script>
+
+</body>
+</html>
