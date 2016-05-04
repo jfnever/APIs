@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Map</title>
+<head>
+    <link href="css/1.css" rel="stylesheet" type="text/css"/>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAoHTqqVjCDe4oxSSSXLey9O6ZNyd8Nhdw&sensor=false">
+    </script>
+
+    <script>
+        function initialize()
+        {
+            var mapProp = {
+                center:new google.maps.LatLng(29.5,106.5),
+                zoom:9,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap")
+                    ,mapProp);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+<div class="container">
+
+    <article>
+        <h2>Find your next destination</h2>
+        <p>Life can be likened to a journey with an unknown destination.</p>
+        <form>
+
+            <input type="button" value="Sheffield,UK" id="sheffield" onclick="initMapSheffield();return false;"/>
+            <input type="button" value="Portland,OR" id="portland" onclick="initMapPortland();return false;"/>
+            <input type="button" value="Shanghai,China" id="shanghai"onclick="initMapShanghai();return false;"/>
+            <input type="button" value="Hongkong,China" id="Hongkong" onclick="initMapHongkong();return false;"/>
+            <input type="button" value="Seoul,Korea" id="seoul"onclick="initMapSeoul();return false;"/>
+            <input type="button" value="London,UK" id="london"onclick="initMapLondon();return false;"/>
+
+        </form>
+
+    </article>
+
+    <div id="googleMap">
+
+    </div>
+
+</div>
+
+<script src="js.js"></script>
+</body>
+
+
